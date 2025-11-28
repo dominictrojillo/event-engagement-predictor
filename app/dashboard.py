@@ -11,8 +11,19 @@ PIPE = Path("models/model.pkl")
 st.set_page_config(page_title="Event Attendance Predictor", layout="wide")
 st.title("📊 FASA Event Attendance Predictor")
 
-# SHAP JS (prevents frontend crash)
-shap.initjs()
+if show_shap:
+    st.subheader("📈 SHAP: Why This Prediction?")
+
+    # SHAP calculation
+    transformed = pipeline["pre"].transform(input_df)
+    shap_values = explainer(transformed)
+
+    # Bar plot of SHAP importance
+    fig, ax = plt.subplots(figsize=(8,5))
+    shap.summary_plot(shap_values.values, input_df, plot_type="bar", show=False)
+    st.pyplot(fig)
+
+
 
 # ------------------ MODEL LOADING ------------------
 if not PIPE.exists():

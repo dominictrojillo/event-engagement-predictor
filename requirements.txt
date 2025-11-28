@@ -2,5 +2,9 @@ streamlit
 pandas
 scikit-learn
 joblib
+numpy
+xgboost
+lightgbm
+shap==0.46.0
+ipython
 matplotlib
-shap
