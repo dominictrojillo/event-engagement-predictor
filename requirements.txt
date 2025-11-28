@@ -1,7 +1,9 @@
-pandas
-numpy
-scikit-learn
 streamlit
+pandas
+scikit-learn
 joblib
-python-dateutil
 matplotlib
+shap
+numpy
+xgboost
+lightgbm
