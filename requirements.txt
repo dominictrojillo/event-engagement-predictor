@@ -4,6 +4,3 @@ scikit-learn
 joblib
 matplotlib
 shap
-numpy
-xgboost
-lightgbm
