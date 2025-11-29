@@ -1,4 +1,3 @@
-![Event Engagement Predictor Banner](https://raw.githubusercontent.com/dominictrojillo/event-engagement-predictor/main/assets/banner.png)
 # FASA Event Engagement Predictor  
 **Author:** Dominic Trojillo  
 **Repository:** https://github.com/dominictrojillo/event-engagement-predictor  
