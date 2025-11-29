@@ -4,5 +4,3 @@ scikit-learn
 joblib
 matplotlib
 numpy
-xgboost
-lightgbm
